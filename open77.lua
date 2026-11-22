@@ -20,6 +20,7 @@ permissions {
     "players.life.read", -- server: Open77.players.isDead (no action while dead)
     "acl.read",          -- server: Open77.acl.isAllowed (Config.staffRight)
     "input.actions",     -- client: RegisterKeyMapping (lock key, optional menu key)
+    "http.request", -- server: Open77.http.get (update check, Config.versionCheck)
 }
 
 shared_script "config.lua"
@@ -30,6 +31,7 @@ server_scripts {
     "server/keys.lua",
     "server/actions.lua",
     "server/main.lua",
+    "server/version.lua",
 }
 
 client_script "client/main.lua"
